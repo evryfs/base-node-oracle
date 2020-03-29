@@ -7,4 +7,6 @@ RUN apt-get update && \
   unzip /tmp/instantclient.zip -d /opt/oracle && \
   chown -R node:node /opt/oracle/instantclient_19_6/ && \
   echo /opt/oracle/instantclient_19_6 > /etc/ld.so.conf.d/oracle-instantclient.conf && \
-  ldconfig
+  ldconfig && \
+  apt-get -y clean && \
+  rm -rf /var/cache/apt /var/lib/apt/lists/* /tmp/* /var/tmp/*
