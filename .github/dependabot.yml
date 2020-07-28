@@ -4,20 +4,13 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
   target-branch: node12
   ignore:
   - dependency-name: node
     versions:
     - ">= 13.a"
-    - "< 14"
-  - dependency-name: node
-    versions:
-    - ">= 14.a"
-    - "< 15"
 - package-ecosystem: docker
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
   target-branch: node14
