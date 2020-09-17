@@ -1,4 +1,4 @@
-FROM node:12.18.3-buster-slim
+FROM node:12.18.4-buster-slim
 # hadolint ignore=DL3008
 RUN apt-get update && \
   apt-get -y --no-install-recommends install libaio1 curl ca-certificates unzip && \
