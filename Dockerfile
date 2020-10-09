@@ -1,4 +1,4 @@
-FROM node:14.13.0-buster-slim
+FROM node:14.13.1-buster-slim
 # hadolint ignore=DL3008
 ARG INSTANT_CLIENT=https://download.oracle.com/otn_software/linux/instantclient/19800/instantclient-basiclite-linux.x64-19.8.0.0.0dbru.zip
 ARG INSTANT_CLIENT_LOCATION=/opt/oracle/instantclient_19_8
