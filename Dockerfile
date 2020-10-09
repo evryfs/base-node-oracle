@@ -2,6 +2,7 @@ FROM node:12.19.0-buster-slim
 # hadolint ignore=DL3008
 ARG INSTANT_CLIENT=https://download.oracle.com/otn_software/linux/instantclient/19800/instantclient-basiclite-linux.x64-19.8.0.0.0dbru.zip
 ARG INSTANT_CLIENT_LOCATION=/opt/oracle/instantclient_19_8
+# hadolint ignore=DL3008
 RUN apt-get update && \
   apt-get -y --no-install-recommends install libaio1 curl ca-certificates unzip && \
   mkdir /opt/oracle && \
