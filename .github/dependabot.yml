@@ -14,3 +14,7 @@ updates:
   schedule:
     interval: daily
   target-branch: node14
+  ignore:
+  - dependency-name: node
+    versions:
+    - ">= 15"
