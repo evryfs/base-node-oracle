@@ -4,13 +4,3 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  target-branch: node14
-  ignore:
-  - dependency-name: node
-    versions:
-    - ">= 15"
-- package-ecosystem: docker
-  directory: "/"
-  schedule:
-    interval: daily
-  target-branch: node16
