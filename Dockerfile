@@ -1,4 +1,4 @@
-FROM node:18.13.0-bullseye-slim
+FROM node:18.16.0-bullseye-slim
 # hadolint ignore=DL3008
 ARG INSTANT_CLIENT=https://download.oracle.com/otn_software/linux/instantclient/instantclient-basiclite-linuxx64.zip
 ARG INSTANT_CLIENT_LOCATION=/opt/oracle/instantclient
